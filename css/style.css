@@ -1,0 +1,83 @@
+body{
+    background: linear-gradient(rgb(250, 251, 255),rgb(84, 105, 201));
+    height: auto;
+}
+.logo{
+    height: 60px;
+    margin: auto;
+    display: block;
+}
+h2{
+    text-align: center;
+    margin-top: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.container{
+    display: block;
+    margin: auto;
+    max-width: 999px;
+    height: 45vh;
+    border: 2px solid black;
+    padding: 30px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.message{
+    background-color: rgb(228, 209, 209);
+    width: 20%;
+    margin-top: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 8px;
+
+}
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+}
+.send{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#messageInp{
+    width: 52%;
+    height: 34px;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn{
+    border-radius: 6px;
+    background-image: url('/send.png');
+      /* Set the width and height of the button */
+      width: 50px;
+      height: 40px;
+      /* Specify background size and position */
+      background-size: cover;
+      background-position: center;
+      /* Other button styling */
+      color: #000000;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 16pc;
+}
+@media only screen and (max-width: 767px) {
+    .container{
+        height: 49vh;
+    }
+    .btn{
+        margin-bottom: 2pc;
+    }
+    .message{
+        width: 40%;
+    }
+}

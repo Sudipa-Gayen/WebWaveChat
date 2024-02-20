@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebWaveChat</title>
+    <!-- defer: our script running in background when dom is ready then it will work s if we want to assign the script in  the top then we have to use the defer otherwise it's will loaded before dom is created -->
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="logo.png">
+        <h2>Welcome To The World Of Communication</h2>
+    </nav>
+    <div class="container">
+        <!-- <div class="message right">Harry: Hey! Buddy</div>
+        <div class="message left">Rohan: What's Up Broo..</div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" placeholder="Message" id="messageInp">
+            <button class="btn" type="submit">send</button>
+        </form>
+    </div>
+</body>
+</html>
